@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples", "Examples.csproj", "{6D113947-20BE-4572-94FD-BF69C95E697F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftExampleBreakfast", "..\MicrosoftExampleBreakfast\MicrosoftExampleBreakfast.csproj", "{30434A6C-59FE-4270-8458-0B1342BB6C4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosoftExampleBreakfast", "..\MicrosoftExampleBreakfast\MicrosoftExampleBreakfast.csproj", "{30434A6C-59FE-4270-8458-0B1342BB6C4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
