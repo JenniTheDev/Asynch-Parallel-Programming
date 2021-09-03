@@ -31,27 +31,6 @@ namespace AsyncBreakfast {
             Juice oj = PourOJ();
             Console.WriteLine("oj is ready");
             Console.WriteLine("Breakfast is ready!");
-
-            // if we use Await instead
-            //static async Task BreakfastMain() {
-            //    Coffee cup = PourCoffee();
-            //    Console.WriteLine("coffee is ready");
-
-            //    Egg eggs = await FryEggsAsync(2);
-            //    Console.WriteLine("eggs are ready");
-
-            //    Bacon bacon = await FryBaconAsync(3);
-            //    Console.WriteLine("bacon is ready");
-
-            //    Toast toast = await ToastBreadAsync(2);
-            //    ApplyButter(toast);
-            //    ApplyJam(toast);
-            //    Console.WriteLine("toast is ready");
-
-            //    Juice oj = PourOJ();
-            //    Console.WriteLine("oj is ready");
-            //    Console.WriteLine("Breakfast is ready!");
-            //}
         }
 
         private static Juice PourOJ() {
@@ -104,6 +83,26 @@ namespace AsyncBreakfast {
         private static Coffee PourCoffee() {
             Console.WriteLine("Pouring coffee");
             return new Coffee();
+        }
+
+        private static async Task BreakfastMain() {
+            Coffee cup = PourCoffee();
+            Console.WriteLine("coffee is ready");
+
+            Egg eggs = await FryEggsAsync(2);
+            Console.WriteLine("eggs are ready");
+
+            Bacon bacon = await FryBaconAsync(3);
+            Console.WriteLine("bacon is ready");
+
+            Toast toast = await ToastBreadAsync(2);
+            ApplyButter(toast);
+            ApplyJam(toast);
+            Console.WriteLine("toast is ready");
+
+            Juice oj = PourOJ();
+            Console.WriteLine("oj is ready");
+            Console.WriteLine("breakfast is ready!");
         }
     }
 }
