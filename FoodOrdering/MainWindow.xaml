@@ -4,9 +4,62 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FoodOrdering"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" FontSize = "20"
+        Title="Order Breakfast" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            Grid.Column="3"
+            Grid.Row="1"
+            FontSize="42"
+            HorizontalAlignment="Center"
+            FontWeight="SemiBold"
+            Text="What would you like to eat?" />
+
+        <TextBlock
+            Grid.Column="3"
+            Grid.Row="3"
+            FontSize="25"
+            HorizontalAlignment="Left"
+            Text="How many eggs?" />
+
+        <TextBlock
+            Grid.Column="3"
+            Grid.Row="4"
+            FontSize="25"
+            HorizontalAlignment="Left"
+            Text="How much bacon?" />
+
+        <TextBlock
+            Grid.Column="3"
+            Grid.Row="5"
+            FontSize="25"
+            HorizontalAlignment="Left"
+            Text="Toast?" />
+
+        <TextBlock
+            Grid.Column="3"
+            Grid.Row="6"
+            FontSize="25"
+            HorizontalAlignment="Left"
+            Text="Coffee, OJ or both?" />
     </Grid>
 </Window>
